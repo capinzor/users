@@ -1,0 +1,105 @@
+<app-header></app-header>
+
+    <div class="container"> 
+
+        
+        <form [formGroup]="newForm" (ngSubmit)="postForm(newForm.value)">
+
+            <div class="form-group row">
+                <div class="col">
+                    <label for="exampleFormControlInpun1">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Nombre del Usuario" formControlName='name'>
+                </div>                               
+            </div>
+            <div class="form-group row">
+                <div class="col">
+                    <label for="exampleFormControlInpun1">Nombre de Usuario</label>
+                    <input type="text" class="form-control" placeholder="" formControlName='username'>
+                </div>
+                <div class="col">
+                    <label for="exampleFormControlInpun1">Email</label>
+                    <input type="text" class="form-control" placeholder="" formControlName='email'>
+                </div>                
+            </div>
+            <div class="form-group row">
+                <div class="col">
+                    <label for="exampleFormControlInpun1">Teléfono</label>
+                    <input type="text" class="form-control" placeholder="" formControlName='phone'>
+                </div>
+                <div class="col">
+                    <label for="exampleFormControlInpun1">Sitio Web</label>
+                    <input type="text" class="form-control" placeholder="" formControlName='website'>
+                </div>                
+            </div>
+            <br>
+
+            <input class="form-control" type="text" placeholder="Dirección" readonly>
+
+            <div class="form-group row">
+                <div class="col-6">
+                    <label for="exampleFormControlInpun1">Ciudad</label>
+                    <input type="text" class="form-control" placeholder="city"formControlName='city'>
+                  </div>
+                <div class="col">
+                    <label for="exampleFormControlInpun1">Zipcode</label>
+                    <input type="text" class="form-control" placeholder="state"formControlName='street'>
+                </div>
+                <div class="col">
+                    <label for="exampleFormControlInpun1">Suite</label>
+                    <input type="text" class="form-control" placeholder="zip"formControlName='suite'>
+                </div>                
+            </div>
+
+            
+            <div class="form-row">
+                <div class="col">
+                    <label for="exampleFormControlInpun1">Latitud</label>
+                    <input type="text" class="form-control" placeholder="state"formControlName='lat'>
+                </div>
+                <div class="col">
+                <label for="exampleFormControlInpun1">longitud</label>
+                <input type="text" class="form-control" placeholder="state"formControlName='lng'>
+                </div>
+                <div class="col-6">
+                <label for="exampleFormControlInpun1">Zipcode</label>
+                <input type="text" class="form-control" placeholder="state"formControlName='zipcode'>
+                </div>                  
+            </div>
+            <br>
+
+            <input class="form-control" type="text" placeholder="Empresa" readonly>
+
+            <div class="form-group row">
+                <div class="col">
+                    <label for="exampleFormControlInpun1">Bs</label>
+                    <input type="text" class="form-control" placeholder=""formControlName='bs'>
+                  </div>
+                <div class="col">
+                    <label for="exampleFormControlInpun1">Frase</label>
+                    <input type="text" class="form-control" placeholder=""formControlName='catchPhrase'>
+                </div>
+                <div class="col">
+                    <label for="exampleFormControlInpun1">Nombre</label>
+                    <input type="text" class="form-control" placeholder=""formControlName='namme'>
+                </div>                
+            </div>
+            <br>
+
+            <div class="form-group row">
+                <div class="col">
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                  </div>
+                
+                <div class="col">
+                    <button type="button" class="btn btn-success" (click)="leave()">Salir</button>
+                </div>                
+            </div>
+            
+            
+        </form>
+
+        
+    </div> 
+
+
+<app-footer></app-footer>
